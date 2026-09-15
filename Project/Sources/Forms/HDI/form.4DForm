@@ -29,11 +29,12 @@
 					"width": 320,
 					"height": 77,
 					"visibility": "hidden",
-					"stroke": "#FF4D00",
+					"class": "hdi-warn",
+					"fill": "automatic",
 					"textAlign": "left",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 13,
-					"text": "Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality."
+					"text": ":xliff:HDI_TxtSorry1"
 				},
 				"TxtInfo1": {
 					"type": "text",
@@ -41,10 +42,12 @@
 					"left": 40,
 					"width": 151,
 					"height": 19,
+					"fill": "automatic",
+					"stroke": "automatic",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 15,
 					"fontWeight": "bold",
-					"text": "How Do I..."
+					"text": ":xliff:HDI_TxtInfo1"
 				},
 				"TxtInfo2": {
 					"type": "text",
@@ -53,10 +56,12 @@
 					"width": 205,
 					"height": 38,
 					"textAlign": "left",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 15,
 					"fontWeight": "bold",
-					"text": "… print my 4D Write Pro documents? "
+					"text": ":xliff:HDI_TxtInfo2"
 				},
 				"Picture3": {
 					"type": "picture",
@@ -73,22 +78,24 @@
 					"left": 120,
 					"width": 220,
 					"height": 19,
+					"fill": "automatic",
+					"stroke": "automatic",
 					"fontFamily": "Lucida Grande",
 					"fontSize": 15,
-					"text": "4D v16 and above…"
+					"text": ":xliff:HDI_TxtVersion"
 				},
 				"BtnDemo": {
 					"type": "button",
 					"top": 280,
 					"left": 250,
 					"width": 90,
-					"height": 20,
 					"dataSource": "Demo",
 					"action": "accept",
-					"text": "Demo",
-					"class": "default1",
+					"text": ":xliff:HDI_BtnDemo",
+					"class": "default",
 					"focusable": false,
 					"defaultButton": true,
+					"method": "ObjectMethods/BtnDemo.4dm",
 					"events": [
 						"onClick"
 					]
@@ -100,12 +107,13 @@
 					"width": 280,
 					"height": 57,
 					"visibility": "hidden",
-					"stroke": "#EE0000",
+					"class": "hdi-error",
+					"fill": "automatic",
 					"textAlign": "center",
 					"fontFamily": ".Lucida Grande UI",
 					"fontSize": 16,
 					"fontWeight": "bold",
-					"text": "4D Write Pro License is required for this demo."
+					"text": ":xliff:HDI_TxtLicence"
 				},
 				"TxtSorry2": {
 					"type": "text",
@@ -114,9 +122,11 @@
 					"width": 300,
 					"height": 81,
 					"visibility": "hidden",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Sorry, this “How do I” (HDI) \rexample must be used with\ra newer version of 4D\r(v16 and above)."
+					"text": ":xliff:HDI_TxtSorry2"
 				}
 			}
 		}

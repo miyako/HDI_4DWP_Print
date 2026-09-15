@@ -1,6 +1,6 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 //get the number of page total
-C_LONGINT:C283($nbPageInDoc)
+var $nbPageInDoc : Integer
 $nbPageInDoc:=WP Get page count:C1412(writeProDoc)
 
 Case of 

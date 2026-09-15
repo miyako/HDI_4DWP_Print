@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/Methods" source-language="en" target-language="en">
+		<body>
+		<trans-unit id="BtnClose" resname="BtnClose">
+			<source>Close</source>
+			<target>Close</target>
+		</trans-unit>
+		<trans-unit id="PaperUndefined" resname="PaperUndefined">
+			<source>Paper undefined for this printer</source>
+			<target>Paper undefined for this printer</target>
+		</trans-unit>
+		<trans-unit id="FormatBy" resname="FormatBy">
+			<source> by </source>
+			<target> by </target>
+		</trans-unit>
+		<trans-unit id="FormatPx" resname="FormatPx">
+			<source> px</source>
+			<target> px</target>
+		</trans-unit>
+		<trans-unit id="HDI2_PageRangeAll" resname="HDI2_PageRangeAll">
+			<source>All</source>
+			<target>All</target>
+		</trans-unit>
+		<trans-unit id="HDI2_PageRangeSingle" resname="HDI2_PageRangeSingle">
+			<source>Single</source>
+			<target>Single</target>
+		</trans-unit>
+		<trans-unit id="HDI2_PageRangeRange" resname="HDI2_PageRangeRange">
+			<source>Range</source>
+			<target>Range</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

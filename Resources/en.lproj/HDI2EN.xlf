@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+		<body>
+		<trans-unit id="HDI2_TabInfo" resname="HDI2_TabInfo">
+			<source>Info</source>
+			<target>Info</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TabDemo" resname="HDI2_TabDemo">
+			<source>Demo</source>
+			<target>Demo</target>
+		</trans-unit>
+		<trans-unit id="HDI2_GroupPrintSettings" resname="HDI2_GroupPrintSettings">
+			<source>Print settings</source>
+			<target>Print settings</target>
+		</trans-unit>
+		<trans-unit id="HDI2_GroupPageSetup" resname="HDI2_GroupPageSetup">
+			<source>Page setup for the next print</source>
+			<target>Page setup for the next print</target>
+		</trans-unit>
+		<trans-unit id="HDI2_BtnPrint" resname="HDI2_BtnPrint">
+			<source>Print</source>
+			<target>Print</target>
+		</trans-unit>
+		<trans-unit id="HDI2_RbHtmlWysiwyg" resname="HDI2_RbHtmlWysiwyg">
+			<source>HTML wysiwyg*</source>
+			<target>HTML wysiwyg*</target>
+		</trans-unit>
+		<trans-unit id="HDI2_RbWpLayout" resname="HDI2_RbWpLayout">
+			<source>Write Pro layout</source>
+			<target>Write Pro layout</target>
+		</trans-unit>
+		<trans-unit id="HDI2_BtnSetSizeOrientation" resname="HDI2_BtnSetSizeOrientation">
+			<source>Set size and orientation from doc</source>
+			<target>Set size and orientation from doc</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtCopies" resname="HDI2_TxtCopies">
+			<source>Copies:</source>
+			<target>Copies:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtPages" resname="HDI2_TxtPages">
+			<source>Pages:</source>
+			<target>Pages:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtTo" resname="HDI2_TxtTo">
+			<source>to:</source>
+			<target>to:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtRemoveStyles" resname="HDI2_TxtRemoveStyles">
+			<source>*Removes unsupported styles on browsers. </source>
+			<target>*Removes unsupported styles on browsers. </target>
+		</trans-unit>
+		<trans-unit id="HDI2_BtnPageSetupDialog" resname="HDI2_BtnPageSetupDialog">
+			<source>Show page setup dialog...</source>
+			<target>Show page setup dialog...</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtScale" resname="HDI2_TxtScale">
+			<source>Scale:</source>
+			<target>Scale:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtPercent" resname="HDI2_TxtPercent">
+			<source>%</source>
+			<target>%</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtOrientation" resname="HDI2_TxtOrientation">
+			<source>Orientation:</source>
+			<target>Orientation:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_RbLandscape" resname="HDI2_RbLandscape">
+			<source>Landscape</source>
+			<target>Landscape</target>
+		</trans-unit>
+		<trans-unit id="HDI2_RbPortrait" resname="HDI2_RbPortrait">
+			<source>Portrait</source>
+			<target>Portrait</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtPaperSize" resname="HDI2_TxtPaperSize">
+			<source>Paper size:</source>
+			<target>Paper size:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtUseSpecificLayout" resname="HDI2_TxtUseSpecificLayout">
+			<source>Use a specific layout:</source>
+			<target>Use a specific layout:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtFrom" resname="HDI2_TxtFrom">
+			<source>from:</source>
+			<target>from:</target>
+		</trans-unit>
+		<trans-unit id="HDI2_ChkPreview" resname="HDI2_ChkPreview">
+			<source>Preview</source>
+			<target>Preview</target>
+		</trans-unit>
+		<trans-unit id="HDI2_BtnShowPrintDialog" resname="HDI2_BtnShowPrintDialog">
+			<source>Show print dialog</source>
+			<target>Show print dialog</target>
+		</trans-unit>
+		<trans-unit id="HDI2_TxtThumbnailLetter" resname="HDI2_TxtThumbnailLetter">
+			<source>A</source>
+			<target>A</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
