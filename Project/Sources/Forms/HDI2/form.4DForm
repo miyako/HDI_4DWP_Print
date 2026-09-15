@@ -40,13 +40,15 @@
 					"dataSource": "<>tab",
 					"dataSourceTypeHint": "arrayText",
 					"labels": [
-						"Info",
-						"Demo"
+						":xliff:HDI2_TabInfo",
+						":xliff:HDI2_TabDemo"
 					],
 					"action": "gotoPage",
 					"events": [
 						"onClick"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -96,7 +98,9 @@
 					"left": 325,
 					"width": 336,
 					"height": 190,
-					"text": "Print settings"
+					"text": ":xliff:HDI2_GroupPrintSettings",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Group Box": {
 					"type": "groupBox",
@@ -104,7 +108,9 @@
 					"left": 40,
 					"width": 250,
 					"height": 280,
-					"text": "Page setup for the next print"
+					"text": ":xliff:HDI2_GroupPageSetup",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"WriteProArea1": {
 					"type": "write",
@@ -130,15 +136,15 @@
 					"top": 300,
 					"left": 500,
 					"width": 160,
-					"height": 17,
-					"text": "Print",
+					"text": ":xliff:HDI2_BtnPrint",
 					"fontFamily": "Segoe UI",
 					"fontSize": 12,
 					"defaultButton": true,
 					"method": "ObjectMethods/bPrint.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button14": {
 					"type": "radio",
@@ -147,11 +153,13 @@
 					"width": 130,
 					"height": 17,
 					"dataSource": "rb_htmlwysiwyg",
-					"text": "HTML wysiwyg*",
+					"text": ":xliff:HDI2_RbHtmlWysiwyg",
 					"radioGroup": "Group4",
 					"events": [
 						"onClick"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Button15": {
 					"type": "radio",
@@ -160,23 +168,25 @@
 					"width": 130,
 					"height": 17,
 					"dataSource": "rb_wplayout",
-					"text": "Write Pro layout\r",
+					"text": ":xliff:HDI2_RbWpLayout",
 					"radioGroup": "Group4",
 					"events": [
 						"onClick"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Button10": {
 					"type": "button",
 					"top": 280,
 					"left": 51,
 					"width": 228,
-					"height": 17,
-					"text": "Set size and orientation from doc",
+					"text": ":xliff:HDI2_BtnSetSizeOrientation",
 					"method": "ObjectMethods/Button10.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable": {
 					"type": "input",
@@ -192,7 +202,9 @@
 					"method": "ObjectMethods/Variable.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Text": {
 					"type": "text",
@@ -201,7 +213,9 @@
 					"width": 53,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Copies:"
+					"text": ":xliff:HDI2_TxtCopies",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Combo Box": {
 					"type": "dropdown",
@@ -214,7 +228,9 @@
 					"method": "ObjectMethods/Combo Box.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -223,7 +239,9 @@
 					"width": 53,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Pages:"
+					"text": ":xliff:HDI2_TxtPages",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"VarStart": {
 					"type": "input",
@@ -240,7 +258,9 @@
 					"method": "ObjectMethods/VarStart.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"varEnd": {
 					"type": "input",
@@ -257,7 +277,9 @@
 					"method": "ObjectMethods/varEnd.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtEnd": {
 					"type": "text",
@@ -267,7 +289,9 @@
 					"height": 17,
 					"visibility": "hidden",
 					"textAlign": "right",
-					"text": "to:"
+					"text": ":xliff:HDI2_TxtTo",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Ruler1": {
 					"type": "stepper",
@@ -323,23 +347,24 @@
 					"left": 348,
 					"width": 140,
 					"height": 26,
-					"stroke": "#696969",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 10,
-					"text": "*Removes unsupported styles on browsers. "
+					"text": ":xliff:HDI2_TxtRemoveStyles",
+					"class": "hdi-muted",
+					"fill": "automatic"
 				},
 				"Button": {
 					"type": "button",
 					"top": 300,
 					"left": 51,
 					"width": 228,
-					"height": 17,
-					"text": "Show page setup dialog...",
+					"text": ":xliff:HDI2_BtnPageSetupDialog",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable2": {
 					"type": "input",
@@ -353,7 +378,9 @@
 					"method": "ObjectMethods/Variable2.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtScale": {
 					"type": "text",
@@ -362,7 +389,9 @@
 					"width": 53,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Scale:"
+					"text": ":xliff:HDI2_TxtScale",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtEnd2": {
 					"type": "text",
@@ -371,7 +400,9 @@
 					"width": 13,
 					"height": 17,
 					"textAlign": "right",
-					"text": "%"
+					"text": ":xliff:HDI2_TxtPercent",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtOrien": {
 					"type": "text",
@@ -380,7 +411,9 @@
 					"width": 80,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Orientation:"
+					"text": ":xliff:HDI2_TxtOrientation",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Radio Button": {
 					"type": "radio",
@@ -389,7 +422,7 @@
 					"width": 100,
 					"height": 13,
 					"dataSource": "vLandscape",
-					"text": "Landscape",
+					"text": ":xliff:HDI2_RbLandscape",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 13,
 					"focusable": false,
@@ -397,7 +430,9 @@
 					"method": "ObjectMethods/Radio Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Radio Button1": {
 					"type": "radio",
@@ -406,7 +441,7 @@
 					"width": 100,
 					"height": 13,
 					"dataSource": "vPortrait",
-					"text": "Portrait",
+					"text": ":xliff:HDI2_RbPortrait",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 13,
 					"focusable": false,
@@ -414,7 +449,9 @@
 					"method": "ObjectMethods/Radio Button1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Popup Dropdown List1": {
 					"type": "dropdown",
@@ -427,7 +464,9 @@
 					"method": "ObjectMethods/Popup Dropdown List1.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Text3": {
 					"type": "text",
@@ -436,7 +475,9 @@
 					"width": 80,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Paper size:"
+					"text": ":xliff:HDI2_TxtPaperSize",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtFormat": {
 					"type": "text",
@@ -446,7 +487,9 @@
 					"height": 13,
 					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 10
+					"fontSize": 10,
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtOrien1": {
 					"type": "text",
@@ -455,7 +498,9 @@
 					"width": 140,
 					"height": 17,
 					"textAlign": "left",
-					"text": "Use a specific layout:"
+					"text": ":xliff:HDI2_TxtUseSpecificLayout",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"txtEnd1": {
 					"type": "text",
@@ -465,7 +510,9 @@
 					"height": 17,
 					"visibility": "hidden",
 					"textAlign": "right",
-					"text": "from:"
+					"text": ":xliff:HDI2_TxtFrom",
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"RulerScale": {
 					"type": "stepper",
@@ -491,30 +538,34 @@
 					"width": 160,
 					"height": 18,
 					"dataSource": "vPreview",
-					"text": "Preview",
+					"text": ":xliff:HDI2_ChkPreview",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"rOrientation": {
 					"type": "rectangle",
 					"top": 175,
 					"left": 130,
 					"width": 59,
-					"height": 84
+					"height": 84,
+					"fill": "automatic",
+					"stroke": "automatic"
 				},
 				"Button4": {
 					"type": "button",
 					"top": 300,
 					"left": 325,
 					"width": 160,
-					"height": 17,
-					"text": "Show print dialog",
+					"text": ":xliff:HDI2_BtnShowPrintDialog",
 					"method": "ObjectMethods/Button4.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"tTextThumbnail": {
 					"type": "text",
@@ -526,7 +577,9 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "A"
+					"text": ":xliff:HDI2_TxtThumbnailLetter",
+					"fill": "automatic",
+					"stroke": "automatic"
 				}
 			},
 			"entryOrder": [

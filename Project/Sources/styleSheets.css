@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: light) {
+	.hdi-warn {
+		stroke: #FF4D00;
+	}
+
+	.hdi-error {
+		stroke: #EE0000;
+	}
+
+	.hdi-muted {
+		stroke: #696969;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-warn {
+		stroke: #FF8A50;
+	}
+
+	.hdi-error {
+		stroke: #FF6B6B;
+	}
+
+	.hdi-muted {
+		stroke: #A0A0A0;
+	}
+}

@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 //load descritption
 $path:=Get 4D folder:C485(Current resources folder:K5:16)+"description.4wp"
 wpDocDescription:=WP Import document:C1318($path)
@@ -11,8 +11,8 @@ WriteProDoc:=WP Import document:C1318($filePath)
 
 //tab info
 ARRAY TEXT:C222(<>tab; 2)
-<>tab{1}:="Info"
-<>tab{2}:="Demo"
+<>tab{1}:=Localized string("HDI2_TabInfo")
+<>tab{2}:=Localized string("HDI2_TabDemo")
 <>tab:=1
 
 //default number of copy
@@ -24,9 +24,9 @@ rb_wplayout:=1
 
 //default page range print
 ARRAY TEXT:C222(_PageRanges; 3)
-_PageRanges{1}:="All"
-_PageRanges{2}:="Single"
-_PageRanges{3}:="Range"
+_PageRanges{1}:=Localized string("HDI2_PageRangeAll")
+_PageRanges{2}:=Localized string("HDI2_PageRangeSingle")
+_PageRanges{3}:=Localized string("HDI2_PageRangeRange")
 _PageRanges:=1
 vStart:=1
 vEnd:=-1

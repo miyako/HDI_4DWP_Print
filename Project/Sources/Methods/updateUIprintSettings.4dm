@@ -1,4 +1,8 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
+
+var $vPortrait; $i : Integer
+var $w; $h : Real
+var $paper : Text
 
 //Page range option
 GET PRINT OPTION:C734(Page range option:K47:14; vStart; vEnd)
@@ -47,17 +51,15 @@ End if
 
 //paper size option
 ARRAY TEXT:C222(arrListPaperOption; 0)
-C_REAL:C285($w; $h)
-C_TEXT:C284($paper)
 PRINT OPTION VALUES:C785(Paper option:K47:1; arrListPaperOption)
 GET PRINT OPTION:C734(Paper option:K47:1; $paper)
 GET PRINT OPTION:C734(Paper option:K47:1; $w; $h)
 $i:=Find in array:C230(arrListPaperOption; $paper)
 arrListPaperOption:=$i
 If ($i=-1)
-	OBJECT SET TITLE:C194(*; "txtFormat"; "Paper undefined for this printer")
+	OBJECT SET TITLE:C194(*; "txtFormat"; Localized string("PaperUndefined"))
 Else 
-	OBJECT SET TITLE:C194(*; "txtFormat"; String:C10($w)+" by "+String:C10($h)+" px")
+	OBJECT SET TITLE:C194(*; "txtFormat"; String:C10($w)+Localized string("FormatBy")+String:C10($h)+Localized string("FormatPx"))
 End if 
 
 resizePageThumbnail

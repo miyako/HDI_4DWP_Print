@@ -1,5 +1,6 @@
-//%attributes = {}
-C_LONGINT:C283($l; $t; $r; $b; $w; $h)
+//%attributes = {"invisible":true}
+var $l; $t; $r; $b; $w; $h : Integer
+var $orientation; $x; $y : Integer
 
 OBJECT GET COORDINATES:C663(*; "rOrientation"; $l; $t; $r; $b)
 GET PRINT OPTION:C734(Paper option:K47:1; $w; $h)
