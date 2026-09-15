@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_4DWP_Print" uuid="7923B5E76DCD4573877E8648CB5982B8" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Table_1" uuid="4D20AA16837E482FA7C236B01E411746" id="1">
+		<field name="ID" uuid="4435F97D49454BA8A1D9A51DCD716B6D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="4435F97D49454BA8A1D9A51DCD716B6D"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="8F59528A5D4842D18896022571CD0CAE" type="7">
+		<field_ref uuid="4435F97D49454BA8A1D9A51DCD716B6D" name="ID">
+			<table_ref uuid="4D20AA16837E482FA7C236B01E411746" name="Table_1"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="HDI_4DWP_Print" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

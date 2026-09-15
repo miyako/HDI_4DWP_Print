@@ -1,0 +1,8 @@
+//%attributes = {}
+OPEN PRINTING JOB:C995
+
+WP PRINT:C1343(writeProDoc)
+
+
+
+CLOSE PRINTING JOB:C996

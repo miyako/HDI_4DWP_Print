@@ -1,0 +1,575 @@
+{
+	"destination": "detailScreen",
+	"width": 700,
+	"height": 750,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 10,
+					"left": 20,
+					"width": 663,
+					"height": 721,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>tab",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Info",
+						"Demo"
+					],
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"WriteProArea": {
+					"type": "write",
+					"top": 60,
+					"left": 40,
+					"width": 621,
+					"height": 654,
+					"dataSource": "wpDocDescription",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 96,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"borderStyle": "none",
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 556,
+					"left": 496,
+					"width": 165,
+					"height": 158,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 53,
+					"left": 325,
+					"width": 336,
+					"height": 190,
+					"text": "Print settings"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 50,
+					"left": 40,
+					"width": 250,
+					"height": 280,
+					"text": "Page setup for the next print"
+				},
+				"WriteProArea1": {
+					"type": "write",
+					"top": 352,
+					"left": 40,
+					"width": 620,
+					"height": 363,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WriteProDoc",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false
+				},
+				"bPrint": {
+					"type": "button",
+					"top": 300,
+					"left": 500,
+					"width": 160,
+					"height": 17,
+					"text": "Print",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"defaultButton": true,
+					"method": "ObjectMethods/bPrint.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button14": {
+					"type": "radio",
+					"top": 165,
+					"left": 348,
+					"width": 130,
+					"height": 17,
+					"dataSource": "rb_htmlwysiwyg",
+					"text": "HTML wysiwyg*",
+					"radioGroup": "Group4",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button15": {
+					"type": "radio",
+					"top": 143,
+					"left": 348,
+					"width": 130,
+					"height": 17,
+					"dataSource": "rb_wplayout",
+					"text": "Write Pro layout\r",
+					"radioGroup": "Group4",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 280,
+					"left": 51,
+					"width": 228,
+					"height": 17,
+					"text": "Set size and orientation from doc",
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 125,
+					"left": 572,
+					"width": 64,
+					"height": 17,
+					"dataSource": "vCopies",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 125,
+					"left": 512,
+					"width": 53,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Copies:"
+				},
+				"Combo Box": {
+					"type": "dropdown",
+					"top": 154,
+					"left": 572,
+					"width": 82,
+					"height": 17,
+					"dataSource": "_PageRanges",
+					"focusable": false,
+					"method": "ObjectMethods/Combo Box.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 154,
+					"left": 512,
+					"width": 53,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Pages:"
+				},
+				"VarStart": {
+					"type": "input",
+					"top": 183,
+					"left": 572,
+					"width": 64,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "vStart",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarStart.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"varEnd": {
+					"type": "input",
+					"top": 213,
+					"left": 572,
+					"width": 64,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "vEndScreen",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/varEnd.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"txtEnd": {
+					"type": "text",
+					"top": 213,
+					"left": 512,
+					"width": 53,
+					"height": 17,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"text": "to:"
+				},
+				"Ruler1": {
+					"type": "stepper",
+					"top": 122,
+					"left": 640,
+					"width": 14,
+					"height": 22,
+					"dataSource": "vCopies",
+					"dataSourceTypeHint": "number",
+					"max": 20,
+					"method": "ObjectMethods/Ruler1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"RulerStart": {
+					"type": "stepper",
+					"top": 180,
+					"left": 640,
+					"width": 14,
+					"height": 22,
+					"visibility": "hidden",
+					"dataSource": "vStart",
+					"dataSourceTypeHint": "number",
+					"min": 1,
+					"max": 20,
+					"method": "ObjectMethods/RulerStart.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"RulerEnd": {
+					"type": "stepper",
+					"top": 210,
+					"left": 640,
+					"width": 14,
+					"height": 22,
+					"visibility": "hidden",
+					"dataSource": "vEndScreen",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/RulerEnd.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 188,
+					"left": 348,
+					"width": 140,
+					"height": 26,
+					"stroke": "#696969",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"text": "*Removes unsupported styles on browsers. "
+				},
+				"Button": {
+					"type": "button",
+					"top": 300,
+					"left": 51,
+					"width": 228,
+					"height": 17,
+					"text": "Show page setup dialog...",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 89,
+					"left": 572,
+					"width": 52,
+					"height": 17,
+					"dataSource": "vScale",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"txtScale": {
+					"type": "text",
+					"top": 89,
+					"left": 512,
+					"width": 53,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Scale:"
+				},
+				"txtEnd2": {
+					"type": "text",
+					"top": 89,
+					"left": 627,
+					"width": 13,
+					"height": 17,
+					"textAlign": "right",
+					"text": "%"
+				},
+				"txtOrien": {
+					"type": "text",
+					"top": 81,
+					"left": 47,
+					"width": 80,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Orientation:"
+				},
+				"Radio Button": {
+					"type": "radio",
+					"top": 106,
+					"left": 167,
+					"width": 100,
+					"height": 13,
+					"dataSource": "vLandscape",
+					"text": "Landscape",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 13,
+					"focusable": false,
+					"radioGroup": "Group6",
+					"method": "ObjectMethods/Radio Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 106,
+					"left": 67,
+					"width": 100,
+					"height": 13,
+					"dataSource": "vPortrait",
+					"text": "Portrait",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 13,
+					"focusable": false,
+					"radioGroup": "Group6",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"top": 142,
+					"left": 135,
+					"width": 98,
+					"height": 17,
+					"dataSource": "arrListPaperOption",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Dropdown List1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 142,
+					"left": 40,
+					"width": 80,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Paper size:"
+				},
+				"txtFormat": {
+					"type": "text",
+					"top": 160,
+					"left": 186,
+					"width": 81,
+					"height": 13,
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10
+				},
+				"txtOrien1": {
+					"type": "text",
+					"top": 115,
+					"left": 348,
+					"width": 140,
+					"height": 17,
+					"textAlign": "left",
+					"text": "Use a specific layout:"
+				},
+				"txtEnd1": {
+					"type": "text",
+					"top": 183,
+					"left": 512,
+					"width": 53,
+					"height": 17,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"text": "from:"
+				},
+				"RulerScale": {
+					"type": "stepper",
+					"top": 86,
+					"left": 640,
+					"width": 14,
+					"height": 22,
+					"dataSource": "vscale",
+					"dataSourceTypeHint": "number",
+					"min": 20,
+					"max": 200,
+					"step": 10,
+					"method": "ObjectMethods/RulerScale.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 272,
+					"left": 502,
+					"width": 160,
+					"height": 18,
+					"dataSource": "vPreview",
+					"text": "Preview",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"rOrientation": {
+					"type": "rectangle",
+					"top": 175,
+					"left": 130,
+					"width": 59,
+					"height": 84
+				},
+				"Button4": {
+					"type": "button",
+					"top": 300,
+					"left": 325,
+					"width": 160,
+					"height": 17,
+					"text": "Show print dialog",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tTextThumbnail": {
+					"type": "text",
+					"top": 207,
+					"left": 150,
+					"width": 20,
+					"height": 20,
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "A"
+				}
+			},
+			"entryOrder": [
+				"WriteProArea1",
+				"bPrint",
+				"Group4",
+				"Button14",
+				"Button15",
+				"Button10",
+				"Variable",
+				"Combo Box",
+				"VarStart",
+				"varEnd",
+				"Ruler1",
+				"RulerStart",
+				"RulerEnd",
+				"Button",
+				"Variable2",
+				"Group6",
+				"Radio Button",
+				"Radio Button1",
+				"Popup Dropdown List1",
+				"RulerScale",
+				"Check Box",
+				"Button4"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group4": [
+				"Button14",
+				"Button15"
+			],
+			"Group6": [
+				"Radio Button",
+				"Radio Button1"
+			]
+		}
+	},
+	"colorScheme": "light",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}
